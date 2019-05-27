@@ -4,12 +4,11 @@
 
 import webbrowser, sys
 if len(sys.argv) > 1:
-    #get address from the command line
+    # Get subreddit from the command line
     subreddit = ' '.join(sys.argv[1:])
 else:
+    # Get subreddit after being prompted
     print('Enter a subreddit to be directed to: ')
     subreddit = input()
-
-
 
 webbrowser.open('https://www.reddit.com/r/' + subreddit)
